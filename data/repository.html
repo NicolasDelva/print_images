@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" style="height:100%;">
+    
+<head>
+    <title>PrintImage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="script.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+
+<body class="w3-light-grey" style="height: 100%;">
+
+    <div style="text-align:center; position:sticky; top:80px; width:40%; margin: auto;">
+        <div>
+            <input type="text" placeholder="Type" id="inputId">
+            <button type="button" onclick="Button();">Get Value</button><br />
+            <p>Taille (%) : </p><p id="widthText"></p><input class="slider" type="range" id="width" name="points" min="0" max="300" oninput="adjustSize();"><br />
+            <p>Placement gauche : </p><p id="heightText"></p><input class="slider" type="range" id="height" name="points" min="-250" max="250" oninput="adjustSize();">
+            <p>Placement hauteur : </p><p id="topText"></p><input class="slider" type="range" id="top" name="points" min="-250" max="250" oninput="adjustSize();">
+        </div>
+    </div>
+</body>
+</html>
